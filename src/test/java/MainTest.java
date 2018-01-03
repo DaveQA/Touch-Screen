@@ -60,8 +60,8 @@ public class MainTest {
             System.out.println(url);
         driver.get(url);
 
-//        headerButtonsSearchPartTests.searchPartMainTest(driver);
-//        subMenuButtonsSearchPartTests.partSearchSubMenuButtonsMainTest(driver);
+        headerButtonsSearchPartTests.searchPartMainTest(driver);
+        subMenuButtonsSearchPartTests.partSearchSubMenuButtonsMainTest(driver);
 //        mostPopularSearchTests.mostPopularPartSearchLookUpMainTest(driver);
 //        modalPopUpTests.modalPopUpCheckMainTest(driver);
 //        searchPartsBackButtonTests.backButtonSearchPartMainTest(driver);
