@@ -60,23 +60,23 @@ public class MainTest {
             System.out.println(url);
         driver.get(url);
 
-//        headerButtonsSearchPartTests.searchPartMainTest(driver);
-//        subMenuButtonsSearchPartTests.partSearchSubMenuButtonsMainTest(driver);
-//        mostPopularSearchTests.mostPopularPartSearchLookUpMainTest(driver);
-//        modalPopUpTests.modalPopUpCheckMainTest(driver);
-//        searchPartsBackButtonTests.backButtonSearchPartMainTest(driver);
-//        searchPartsInputFieldTests.inputFieldSearchPartMainTest(driver);
-////======================================================================================================================
-//        searchVehiclesHeaderMenuButtonTests.searchVehiclesMainTest(driver);
-//        searchVehiclesSubMenuButtonTests.searchVehiclesSubMenuButtonsMainTest(driver);
-//        searchVehicleModalPopUpTest.vehicleSearchModalPopUpCheckMainTest(driver);
-//        searchVehicleInputFieldTests.searchVehicleInputFieldSearchPartMainTest(driver);
-        searchVehicleBackButtonTests.vehicleSearchBackButtonMainTest(driver);
+        headerButtonsSearchPartTests.searchPartMainTest(driver);
+        subMenuButtonsSearchPartTests.partSearchSubMenuButtonsMainTest(driver);
+        mostPopularSearchTests.mostPopularPartSearchLookUpMainTest(driver);
+        modalPopUpTests.modalPopUpCheckMainTest(driver);
+        searchPartsBackButtonTests.backButtonSearchPartMainTest(driver);
+        searchPartsInputFieldTests.inputFieldSearchPartMainTest(driver);
 //======================================================================================================================
-//        newOnYardTimeSpanTests.newOnYardTimeSpanMainTest(driver);
-//        newOnYardNotifyMeButtonTests.newOnYardNotifyMeMainTest(driver);
-////======================================================================================================================
-//        notifyMeTests.notifyMeMainTest(driver);
-////======================================================================================================================
+        searchVehiclesHeaderMenuButtonTests.searchVehiclesMainTest(driver);
+        searchVehiclesSubMenuButtonTests.searchVehiclesSubMenuButtonsMainTest(driver);
+        searchVehicleModalPopUpTest.vehicleSearchModalPopUpCheckMainTest(driver);
+        searchVehicleBackButtonTests.vehicleSearchBackButtonMainTest(driver);
+        searchVehicleInputFieldTests.searchVehicleInputFieldSearchPartMainTest(driver);
+//======================================================================================================================
+        newOnYardTimeSpanTests.newOnYardTimeSpanMainTest(driver);
+        newOnYardNotifyMeButtonTests.newOnYardNotifyMeMainTest(driver);
+//======================================================================================================================
+        notifyMeTests.notifyMeMainTest(driver);
+//======================================================================================================================
     }
 }

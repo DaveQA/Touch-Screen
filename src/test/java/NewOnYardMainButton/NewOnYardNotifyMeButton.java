@@ -48,6 +48,7 @@ public class NewOnYardNotifyMeButton {
                 System.out.println("=====================================================================================");
             }
         }
+        returnToMainMenu(driver);
     }
 
     private void clickMainScreenNewOnYardButton(WebDriver driver1) {

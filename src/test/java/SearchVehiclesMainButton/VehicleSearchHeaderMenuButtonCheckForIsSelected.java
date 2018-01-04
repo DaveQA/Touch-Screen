@@ -16,6 +16,10 @@ public class VehicleSearchHeaderMenuButtonCheckForIsSelected {
     private static String ANSI_RESET = "\u001B[0m";
 
     public void searchVehiclesMainTest(WebDriver driver1) {
+        System.out.println("=====================================================================================");
+        System.out.println("Start of the Vehicle Search Section");
+        System.out.println("=====================================================================================");
+        System.out.println("=====================================================================================");
         clickMainScreenSearchVehiclesButton(driver1);
         searchVehiclesLandingPageLoaded();
         searchPartLandingPageLoaded();

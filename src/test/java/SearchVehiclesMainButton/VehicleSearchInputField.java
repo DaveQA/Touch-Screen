@@ -19,6 +19,7 @@ public class VehicleSearchInputField {
         clickOnSearchPartsMainButton(driver1);
         verifyOnScreenKeyboardPopUpIsDisplayed();
         typingWithTheOnScreenKeyboard();
+        returnToMainMenu();
     }
 
     private void verifyOnScreenKeyboardPopUpIsDisplayed() {
@@ -65,5 +66,12 @@ public class VehicleSearchInputField {
         List<WebElement> button = driver.findElements(By.cssSelector("button"));
         wait.until(ExpectedConditions.elementToBeClickable(button.get(1)));
         button.get(1).click();
+    }
+
+    private void returnToMainMenu() {
+        WebDriverWait wait = new WebDriverWait(driver, 30);
+        List<WebElement> returnButton = driver.findElements(By.cssSelector("img"));
+        wait.until(ExpectedConditions.elementToBeClickable(returnButton.get(1)));
+        returnButton.get(1).click();
     }
 }

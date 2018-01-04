@@ -16,6 +16,10 @@ public class PartsSearchHeaderMenuButtonCheckForIsSelected {
     private static String ANSI_RESET = "\u001B[0m";
 
     public void searchPartMainTest(WebDriver driver1) {
+        System.out.println("=====================================================================================");
+        System.out.println("Start of the Part Search Section");
+        System.out.println("=====================================================================================");
+        System.out.println("=====================================================================================");
         searchPartLandingPageLoaded(driver1);
         vehicleSearchLandingPageLoaded();
         priceListLandingPageLoaded();
