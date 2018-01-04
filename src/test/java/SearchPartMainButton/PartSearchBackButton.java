@@ -27,11 +27,9 @@ public class PartSearchBackButton {
 
     private void backButtonOnTheSearchPartsPartScreen() {
         WebDriverWait wait = new WebDriverWait(driver, 30);
-        List<WebElement> button = driver.findElements(By.cssSelector("button"));
-        wait.until(ExpectedConditions.elementToBeClickable(button.get(0)));
-        button.get(0).click();
 
         List<WebElement> backButton = driver.findElements(By.cssSelector(".scrollarea button"));
+        wait.until(ExpectedConditions.elementToBeClickable(backButton.get(2)));
         backButton.get(2).click();
         if (driver.findElement(By.cssSelector("h2")).getAttribute("innerHTML").contentEquals("Welcome to Pull-A-Part!" +
                 "  How would you like to begin your search?")) {

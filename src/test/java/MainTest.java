@@ -60,11 +60,11 @@ public class MainTest {
             System.out.println(url);
         driver.get(url);
 
-        headerButtonsSearchPartTests.searchPartMainTest(driver);
-        subMenuButtonsSearchPartTests.partSearchSubMenuButtonsMainTest(driver);
+//        headerButtonsSearchPartTests.searchPartMainTest(driver);
+//        subMenuButtonsSearchPartTests.partSearchSubMenuButtonsMainTest(driver);
 //        mostPopularSearchTests.mostPopularPartSearchLookUpMainTest(driver);
 //        modalPopUpTests.modalPopUpCheckMainTest(driver);
-//        searchPartsBackButtonTests.backButtonSearchPartMainTest(driver);
+        searchPartsBackButtonTests.backButtonSearchPartMainTest(driver);
 //        searchPartsInputFieldTests.inputFieldSearchPartMainTest(driver);
 //======================================================================================================================
 //        searchVehiclesHeaderMenuButtonTests.searchVehiclesMainTest(driver);
@@ -72,10 +72,10 @@ public class MainTest {
 //        searchVehicleModalPopUpTest.vehicleSearchModalPopUpCheckMainTest(driver);
 //        searchVehicleInputFieldTests.searchVehicleInputFieldSearchPartMainTest(driver);
 //        searchVehicleBackButtonTests.vehicleSearchBackButtonSearchPartMainTest(driver);
-//======================================================================================================================
+////======================================================================================================================
 //        newOnYardTimeSpanTests.newOnYardTimeSpanMainTest(driver);
 //        newOnYardNotifyMeButtonTests.newOnYardNotifyMeMainTest(driver);
-//======================================================================================================================
+////======================================================================================================================
 //        notifyMeTests.notifyMeMainTest(driver);
 //======================================================================================================================
     }
