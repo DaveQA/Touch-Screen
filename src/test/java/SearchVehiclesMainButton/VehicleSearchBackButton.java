@@ -15,77 +15,78 @@ public class VehicleSearchBackButton {
     private static String ANSI_GREEN = "\u001B[32m";
     private static String ANSI_RESET = "\u001B[0m";
 
-    public void vehicleSearchBackButtonSearchPartMainTest(WebDriver driver1) {
+    public void vehicleSearchBackButtonMainTest(WebDriver driver1) {
         mainScreenSearchPartsButton(driver1);
-        backButtonOnTheSearchPartsPartScreen();
-//        backButtonOnTheSearchPartsMakeScreen();
-//        backButtonOnTheSearchPartsModelScreen();
-//        backButtonOnTheSearchPartsYearScreen();
+        backButtonOnTheVehicleMakesScreen();
+        backButtonOnTheVehicleModelScreen();
+        backButtonOnTheVehicleYearScreen();
+        backButtonOnTheVehicleResultsScreen();
 //        backButtonOnTheSearchPartsCantFindYourPage();
-//        returnToMainMenu();
+        returnToMainMenu();
     }
 
-    private void backButtonOnTheSearchPartsPartScreen() {
+    private void backButtonOnTheVehicleMakesScreen() {
         List<WebElement> backButton = driver.findElements(By.cssSelector(".scrollarea button"));
         backButton.get(2).click();
         if (driver.findElement(By.cssSelector("h2")).getAttribute("innerHTML").contentEquals("Welcome to Pull-A-Part!" +
                 "  How would you like to begin your search?")) {
-            System.out.println("Back button from Vehicle Search screen working as intended.");
+            System.out.println("Back button from Make Search screen working as intended.");
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
             System.out.println("=====================================================================================");
         } else {
-            System.out.println("Back button from Search Parts Part screen not working, please check the application.");
+            System.out.println("Back button from Makes screen not working, please check the application.");
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println("=====================================================================================");
         }
     }
 
-    private void backButtonOnTheSearchPartsMakeScreen() {
+    private void backButtonOnTheVehicleModelScreen() {
         mainScreenSearchPartsButton(driver);
-        List<WebElement> partButton = driver.findElements(By.cssSelector(".results button"));
-        partButton.get(0).click();
-
-        List<WebElement> backButton = driver.findElements(By.cssSelector(".scrollarea button"));
-        backButton.get(2).click();
-        if (driver.findElement(By.cssSelector("h2")).getAttribute("innerHTML").contentEquals("What type of part are you looking for?")) {
-            System.out.println("Back button from Search Parts Make screen working as intended.");
-            System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("=====================================================================================");
-        } else {
-            System.out.println("Back button from Search Parts Make screen not working, please check the application.");
-            System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
-            System.out.println("=====================================================================================");
-        }
-    }
-
-    private void backButtonOnTheSearchPartsModelScreen() {
-        List<WebElement> partButton = driver.findElements(By.cssSelector(".results button"));
-        partButton.get(0).click();
         List<WebElement> makeButton = driver.findElements(By.cssSelector(".results button"));
         makeButton.get(0).click();
 
         List<WebElement> backButton = driver.findElements(By.cssSelector(".scrollarea button"));
         backButton.get(2).click();
         if (driver.findElement(By.cssSelector("h2")).getAttribute("innerHTML").contentEquals("What make of vehicle are you looking for?")) {
-            System.out.println("Back button from Search Parts Model screen working as intended.");
+            System.out.println("Back button from Search Model screen working as intended.");
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
             System.out.println("=====================================================================================");
         } else {
-            System.out.println("Back button from Search Parts Model screen not working, please check the application.");
+            System.out.println("Back button from Search Model screen not working, please check the application.");
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println("=====================================================================================");
         }
     }
 
-    private void backButtonOnTheSearchPartsYearScreen() {
-        List<WebElement> makeButton = driver.findElements(By.cssSelector(".results button"));
-        makeButton.get(0).click();
+    private void backButtonOnTheVehicleYearScreen() {
+        List<WebElement> acuraButton = driver.findElements(By.cssSelector(".results button"));
+        acuraButton.get(0).click();
+        List<WebElement> clButton = driver.findElements(By.cssSelector(".results button"));
+        clButton.get(0).click();
+
+        List<WebElement> backButton = driver.findElements(By.cssSelector(".scrollarea button"));
+        backButton.get(0).click();
+        if (driver.findElement(By.cssSelector("h2")).getAttribute("innerHTML").contentEquals("What model of <b>Acura</b> are you looking for?")) {
+            System.out.println("Back button from Vehicle Year screen working as intended.");
+            System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
+            System.out.println("=====================================================================================");
+        } else {
+            System.out.println("Back button from Vehicle Year screen not working, please check the application.");
+//            System.out.println(driver.findElement(By.cssSelector("h2")).getAttribute("innerHTML"));
+            System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
+            System.out.println("=====================================================================================");
+        }
+    }
+
+    private void backButtonOnTheVehicleResultsScreen() {
+        List<WebElement> clButton = driver.findElements(By.cssSelector(".results button"));
+        clButton.get(0).click();
         List<WebElement> yearButton = driver.findElements(By.cssSelector(".results button"));
         yearButton.get(0).click();
 
         List<WebElement> backButton = driver.findElements(By.cssSelector(".scrollarea button"));
-        backButton.get(0).click();
-        if (driver.findElement(By.cssSelector("h1")).getAttribute("innerHTML").contentEquals("We couldn't find the page you're looking for.")) {
+        backButton.get(2).click();
+        if (driver.findElement(By.cssSelector("h2")).getAttribute("innerHTML").contentEquals("What year <b>Acura CL</b> are you looking for?")) {
             System.out.println("Back button from Search Parts Year screen working as intended.");
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
             System.out.println("=====================================================================================");
